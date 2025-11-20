@@ -1,0 +1,111 @@
+# Visión General del Proyecto de Neurociencia Computacional 
+
+##  Resumen Ejecutivo
+
+Este proyecto desarrolla una plataforma integral para investigación en neurociencia computacional que combina técnicas avanzadas de procesamiento de señales cerebrales, machine learning y modelado computacional. Procesamos datos de EEG/fMRI a través de un pipeline estandarizado que transforma señales neurales brutas en insights cognitivos significativos. Nuestra solución aborda el desafío de la reproducibilidad en neurociencia mediante herramientas robustas y documentación completa, facilitando investigación interdisciplinaria y acelerando el descubrimiento científico en el campo de la cognición humana.
+
+## Objetivo Científico
+
+Desarrollar y validar modelos computacionales que expliquen los mecanismos neurales subyacentes a procesos cognitivos complejos, estableciendo puentes cuantitativos entre actividad cerebral medida y constructos psicológicos, contribuyendo así a teorías unificadas en neurociencia cognitiva computacional.
+
+##  Objetivo Tecnológico
+
+Crear un framework modular, escalable y de código abierto que integre mejores prácticas de ingeniería de software con metodologías de investigación en neurociencia, garantizando reproducibilidad, eficiencia computacional, facilidad de extensión y accesibilidad para la comunidad científica.
+
+## Público Objetivo
+
+### Investigadores en Neurociencia
+Necesitan herramientas robustas para análisis avanzado de señales cerebrales
+Buscan métodos reproducibles y validados
+Interesados en modelos computacionales explicativos
+
+### Estudiantes de Posgrado
+Neurociencia cognitiva y computacional
+Psicología experimental
+Ingeniería biomédica y de sistemas
+Ciencia de datos aplicada a neurotecnología
+
+### Ingenieros de Machine Learning
+Desarrolladores interesados en aplicaciones en neurotecnología
+Especialistas en procesamiento de señales biomédicas
+Investigadores en inteligencia artificial aplicada
+
+## Estructura del Repositorio 
+
+Nuestra organización en GitHub sigue una estructura modular clara con ramas principales (main para producción, develop para integración) y flujo GitFlow para features y hotfixes. Utilizamos issues etiquetados, pull requests con revisión obligatoria, CI/CD automatizado con tests y protección de ramas, manteniendo versionado semántico y documentación siempre actualizada para garantizar colaboración eficiente y código de calidad.
+
+El repositorio se organiza en cinco dominios principales:  Preproc para limpieza, filtrado y control de calidad de datos; Neuro dedicado al análisis neurofisiológico, extracción de features y biomarcadores;  Models enfocado en modelado ML/DL, benchmarking y experimentos;  Interp para interpretabilidad, visualización y comunicación científica; y  Docs que centraliza toda la documentación, protocolos y referencias. Cada dominio contiene laboratorios especializados por área, junto con su propia documentación interna, notebooks para exploración rápida, scripts de módulos reutilizables, tests de validación automatizada y un README.md que define objetivos, KPIs y enlaces relevantes del dominio.
+
+A su vez tenemos un repositorio especializado para almacenamiento y gestión centralizada de visualizaciones generadas por el proyecto de neurociencia computacional, incluyendo fotos, espectrogramas, topografías cerebrales y gráficos de análisis neural.
+
+
+## Explicación de los Módulos Principales
+
+### preproc - Preprocesamiento de Señales
+
+Objetivo: Transformar señales cerebrales brutas en datos limpios y estandarizados.
+
+Funcionalidades principales:
+
+Filtrado de frecuencia (band-pass, notch filters)
+Remoción de artefactos (ICA, rechazo automático)
+
+Tecnologías: MNE-Python, Autoreject, Scipy
+
+### neuro - Análisis Neurofisiológico
+
+Objetivo: Extraer características cuantitativas de la actividad cerebral.
+
+Funcionalidades principales:
+
+Análisis espectral (potencia en bandas delta, theta, alpha, beta, gamma)
+Conectividad cerebral (PLV, wPLI, coherencia)
+Análisis de potenciales relacionados a eventos (ERP/ERF)
+Oscilaciones inducidas y relacionadas a eventos
+Análisis tiempo-frecuencia (wavelets, Hilbert)
+
+Tecnologías: MNE-Python, NumPy, SciKit-learn
+
+### interp - Interpretación Cognitiva
+
+Objetivo: Traducir features neurales en constructos psicológicos significativos.
+
+Funcionalidades principales:
+
+Decodificación de estados cognitivos
+Mapeo neural-cognitivo mediante modelos de regresión
+Clasificación de condiciones experimentales
+Análisis de representación (RSA)
+Inferencia de procesos mentales
+Métricas interpretables y explicables
+
+Tecnologías: Scikit-learn, XGBoost, SHAP, Pingouin
+
+### models - Modelos Computacionales
+
+Objetivo: Desarrollar y validar modelos que expliquen mecanismos cerebrales.
+
+Funcionalidades principales:
+Modelado predictivo con validación cruzada
+Modelos generativos de actividad cerebral
+Arquitecturas de deep learning (RNN, CNN, Transformers)
+Simulaciones de procesos cognitivos
+Análisis de causalidad y modelos dinámicos
+Validación teórico-empírica
+
+Tecnologías: PyTorch, TensorFlow, Stan, PyMC
+
+## Visión a futuro
+
+El proyecto evolucionará desde su estado actual como plataforma especializada en análisis de EEG/fMRI hacia un ecosistema integral de neurociencia computacional, expandiéndose mediante la integración multimodal de diversas señales cerebrales, el desarrollo de arquitecturas de IA especializadas y la creación de una plataforma colaborativa, con el objetivo final de posicionarse como referencia que acelere el descubrimiento científico y democratice el acceso a herramientas avanzadas de investigación neurocientífica.
+
+Estamos en búsqueda de la ampliación de contactos y colaboradores, con la intención de la internacionalización del proyecto para así ganar relevancia y validez, nos vemos en el futuro como un equipo de investigación completamente formado y adepto para el desarrollo de nuevos avances tecnológicos dentro del área de la computación , tecnología y derivados.
+
+## Pipeline 
+
+![alt text](docs/Pipeline.png)
+El pipeline es el corazón operativo de nuestro proyecto: una secuencia sistemática que garantiza que desde datos cerebrales complejos y ruidosos podamos extraer consistentemente conocimiento científico confiable y reproducible.
+
+
+
+
